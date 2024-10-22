@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="Icon" href="weather.png">
+</head>
+<body>
+
+    <h2 class="subtitle" id="title"><i class="fas fa-cloud"></i> Météo <i class="fas fa-cloud"></i></h2>
+
+    <div class="container">
+        <header>
+            <h1>Weather forecast</h1>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name" />
+                <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main id="weather-result" class="weather-result">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <h2 id="city-name"></h2>
+                    <img id="weather-icon" src="" alt="Weather Icon" />
+                </div>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Weather Site - All Rights Reserved</p>
+        </footer>
+    </div>
+    <p class="credit">by 7ostera_dev</p>
+    <a href="https://github.com/7ostera-dev/meto" class="githube"><i class="fa-brands fa-github"></i></a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
